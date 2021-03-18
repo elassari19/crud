@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  padding: 5vh 0;
+}
+
+.App{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  input{
+    font-size: 1.2rem;
+    padding: 0 10px;
+    height: 40px;
+    outline: none;
+  }
+  input[type='submit']{
+    outline: none;
+    border: 2px solid rgba(0, 128, 0, 0.562);
+    color: rgba(0, 128, 0, 0.678);
+    border-radius: 0 10px 10px 0;
+    &:hover{
+      background: rgba(0, 128, 0, 0.788);
+      color: white;
+      border: 2px solid rgba(43, 105, 43, 0.151);
+      cursor: pointer;
+    }
+  }
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  .item{
+    background: #3e3e3e25;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  span{
+    text-align: center;
+    flex: 7 7 100%;
+    overflow: hidden;
+    padding: 10px;
+    &:nth-child(2){
+      flex: 2 7 30%;
+      cursor: pointer;
+      background: rgba(0, 128, 0, 0.418);
+      border-radius: 2px 0 0 2px;
+      color: white;
+      &:hover{
+        background: green;
+      }
+    }
+    &:nth-child(3){
+      flex: 2 7 30%;
+      cursor: pointer;
+      background: rgba(255, 0, 0, 0.438);
+      border-radius: 0 5px 5px 0;
+      color: white;
+      &:hover{
+        background: red;
+      }
+    }
+  }
+}

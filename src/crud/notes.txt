@@ -1,0 +1,6 @@
+this 'Crud todo' taken almost 3 hour
+i sucsses to use method useContext without help (google or other)
+i learn how to toggle beetwen the tags by using the 'isEdit' state and update the content
+from span to input and from input to span with update the content of span
+i use scss style one file and import it on the App.js
+next i will try to use 'styled' method to style component
